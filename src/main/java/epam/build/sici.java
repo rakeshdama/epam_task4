@@ -14,10 +14,10 @@ public class sici
         t=sc.nextDouble();
         System. out. println("Enter the Rate of  interest");
         rate=sc.nextDouble();
-        sim=(pr * t * rate)/100;
-        com=pr * Math.pow(1.0+rate/100.0,t) - pr;
+        sim=(pr * t * rate)/100;	//Simple interest
+        com=pr * Math.pow(1.0+rate/100.0,t) - pr;	//compound interest
         DecimalFormat numf = new DecimalFormat("#.00");
-        System.out.println("Simple Interest="+numf.format(sim));
+        System.out.println("Simple Interest="+numf.format(sim));	//using decimal format
         System.out. printf("Compound Interest="+numf.format(com));
         sc.close();
     }
